@@ -128,3 +128,9 @@ header {
     outline: 2px solid #7d2ae8;
     transition: .3s;
 }
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+.social-icons a i {
+    color: #fff;
+}
