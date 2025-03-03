@@ -1,0 +1,34 @@
+/* Style de base */
+#profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Ajustement de l'image */
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Pour les petits écrans (mobiles) */
+@media (max-width: 768px) {
+    #profile {
+        flex-direction: column;
+    }
+    
+    .section {
+        order: 2; /* Met l'image en dernier */
+        display: flex;
+        justify-content: center;
+    }
+
+    .section img {
+        width: 80%; /* Ajuste la taille de l'image */
+        max-width: 300px; /* Limite la taille */
+    }
+}
