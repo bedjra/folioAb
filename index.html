@@ -1,558 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="me.css" />
-    <link rel="stylesheet" href="header.css" />
-    
 
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-          <a href="index.html"><span>Port</span>Folio<span>.</span></h2>
-      </div>
-      <ul class="menu">
-          <li><a href="#about">A propos</a></li>
-          <li><a href="#experience">Experiences </a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-      </ul>
-          
-      <div class="responsive-menu"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="skill.css" />
 
-  </header>
-    
-  
-  <script>
-    var toggle_menu = document.querySelector('.responsive-menu');
-    var menu = document.querySelector('.menu');
-    toggle_menu.onclick= function(){
-         toggle_menu.classList.toggle('active');
-         menu.classList.toggle('responsive')
-    }
+
+</head>
+
+<header>
+  <div class="logo">
+    <a href="index.html"><span>Port</span>Folio<span>.</span></h2>
+  </div>
+  <ul class="menu">
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#about">A propos</a></li>
+    <li><a href="#project">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="responsive-menu"></div>
+
+</header>
+
+
+<script>
+  var toggle_menu = document.querySelector('.responsive-menu');
+  var menu = document.querySelector('.menu');
+  toggle_menu.onclick = function () {
+    toggle_menu.classList.toggle('active');
+    menu.classList.toggle('responsive')
+  }
 </script>
-    <section id="profile">
-      
-      <div class="section__text">
-        <p class="section__text__p1">Coucou, Je suis</p>
-        <h1 class="title">Armel BEDJRA</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/ArmelBEDJRA.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" /#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/armel-bedjra-b4017a2a1/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/bedjra'"
-          />
-        </div>
-      </div>
-      
-      
 
-      <div class="section__pic-container">
-        <img src="./assets/profile.JPG" alt=" profile picture" />
+
+<body>
+  <section id="accueil" class="hero">
+    <div class="hero-text">
+      <p>Salut, je suis</p>
+      <h1>Armel BEDJRA</h1>
+      <h2>Un développeur Web FULLSTACK</h2>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn primary">Contactez-moi</a>
+
+        <a onclick="window.open('./assets/ArmelB.pdf')" class="btn secondary" target="_blank">Mon CV </a>
+
       </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Mieux me connaitre</p>
-      <h1 class="title">A propos de Moi</h1>
-      <div class="sectioncontainer">
-        <div class="section">
-          <img
-            src="./assets/pr.jpg" style="height: 400px;"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Licence en Genie Logiciel
-                <br />Bacalaureat Serie D</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Passionné par le développement et la technologie, je mets mon expertise au service de la création d’applications modernes, performantes et intuitives. Spécialisé en Angular et React, j’allie rigueur, créativité et innovation pour concevoir des solutions robustes et adaptées aux besoins réels des utilisateurs. Chaque ligne de code que j’écris est pensée pour être propre, efficace et évolutive. 
-              J’aime relever des défis techniques, optimiser les performances et apporter des solutions concrètes 
-              aux problématiques rencontrées. <br> Mon objectif ?
-               Créer, innover et faire la différence. 
-               
-            </p>
-          </div>
-        </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
-      
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Connaitre Moz</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Bien Maitrisé</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Bien Maitrisé</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Angular</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              
-             
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Springboot</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flask</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ProgreSql</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySql</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-     
-    </section>
-    <section id="projects">
-      <p class="section__text__p1"> Mes Recent</p>
-      <h1 class="title">Projets</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/coffee.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div><br>
-            <div class="article-container">
-              <img
-                src="./assets/cof.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div><br>
-            <div class="article-container">
-              <img
-                src="./assets/co.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Projet: coffee </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-              src="./assets/nike.png"
-              alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <br>
-            <div class="article-container">
-              <img
-              src="./assets/nik.png"
-              alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <br>
-            <div class="article-container">
-              <img
-              src="./assets/ni.png"
-              alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Projet : Nike  </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/redst.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <br>
-            <div class="article-container">
-              <img
-                src="./assets/red.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <br>
-            <div class="article-container">
-              <img
-                src="./assets/re.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Projet : RedStore </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
+    </div>
+    <div class="hero-image">
+
+      <img src="./assets/profile.JPG" />
+    </div>
+  </section>
+  <section id="about" class="about-section" style="padding-top: 40px;">
+
+    <div class="tech-icons">
+      <img src="./assets/ang.png" alt="Angular" />
+      <img src="./assets/reacts.jpg" alt="React" />
+      <img src="./assets/boot.png" alt="Flask" />
+      <img src="./assets/flask.png" alt="Spring Boot" />
+    </div>
+
+    <div class="about-text">
+      <h1>Armel BEDJRA</h1>
+
+      <h1 class="ab">Un bâtisseur du code</h1>
+      <p>
+        Je suis Armel Bedjra, développeur web full-stack avec 2 ans d’expérience. Passionné par la création
+        d’interfaces modernes et de solutions backend efficaces, je travaille avec des technologies comme Angular,
+        React, Flask et Spring Boot.
+      </p>
+      <p>
+        J’aime transformer les idées en applications concrètes et performantes.Je participe également à des projets
+        collaboratifs.
+      </p>
+      <p>
+        Mon objectif est de livrer des solutions fiables et évolutives, avec une attention particulière portée à
+        l’expérience utilisateur.
+      </p>
+    </div>
+  </section>
+
+  <section class="project" id="project" style="background-color: black; padding-bottom: 20px;">
+    <pre></pre>
+    <h3 style="text-align: center; color: white; padding-top: 10px; margin-bottom: -30px;">REALISATION</h3>
+
+    <div class="section__container contact__container">
+
+      <div class="heroimag">
+        <img src="assets/rea/bord.png" alt="contact" />
       </div>
 
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/photog.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div><br>
-            <div class="article-container">
-              <img
-                src="./assets/phot.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div><br>
-            <div class="article-container">
-              <img
-                src="./assets/ph.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Projet: Photographer</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-              src="./assets/trave.png"
-              alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <br>
-            <div class="article-container">
-              <img
-              src="./assets/tra.png"
-              alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <br>
-            <div class="article-container">
-              <img
-              src="./assets/tr.png"
-              alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Projet : Travel Tour</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/at.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <br>
-            <div class="article-container">
-              <img
-                src="./assets/ate.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <br>
-            <div class="article-container">
-              <img
-                src="./assets/atel.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h6 class="experience-sub-title project-titl">
-              Projet : formulaire pour l'acces a une application de couture</h6>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
+      <div class="heroimag">
+        <img src="assets/rea/redst.png" alt="contact" />
       </div>
-     
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Prenez contact</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:armelbedjra12@gmail.com">armelbedjra12@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="//www.linkedin.com/in/armel-bedjra-b4017a2a1/">LinkedIn</a></p>
-        </div>
+
+    </div>
+
+    <div class="section__container contact__container">
+
+      <div class="heroimag">
+        <img src="assets/rea/An.png" alt="contact" />
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">A popos</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+
+      <div class="heroimag">
+        <img src="assets/rea/coffee.png" alt="contact" />
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section__container contact__container">
+      <div class="contact__content">
+        <h2 class="section__header">Contact Me</h2>
+
+        <form action="/">
+          <div class="input__row">
+            <input type="text" placeholder="Nom" />
+            <input type="text" placeholder=" Email" />
+          </div>
+          <input type="text" placeholder=" Message" />
+          <button class="btn" type="submit"> <a href="#"> ENVOYER </a> </button>
+        </form>
+      </div>
+
+      <div class="heroimage">
+
+        <img src="assets/me.jpg" alt="contact" />
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="foote">
+    <div class="footer-container">
+      <div class="bas">
+        <p href="index.html" class="pp">
+          <span>Port</span>Folio<span>.</span>
+        </p>
+      </div>
+      <ul class="men">
+        <div class="reseaux">
+          <ul class="menu">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#project">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-      </nav>
-      <p>Copyright &copy;
-        <script>
-            document.write(new Date().getFullYear());
-        </script>. All Rights Reserved. &mdash; by Armel BEDJRA <a href="https://untree.co" class="link-highlight"></a>
-    </p>    </footer>
-    <script src="script.js"></script>
-  </body>
+      </ul>
+      <div class="bass">
+        <p>
+          Copyright © 2025 by Armel BEDJRA - Tous droits réservés
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script>
+    var toggle_menu = document.querySelector('.responsive-menu');
+    var menu = document.querySelector('.menu');
+    toggle_menu.onclick = function () {
+      toggle_menu.classList.toggle('active');
+      menu.classList.toggle('responsive')
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,  // Durée de l'animation (en ms)
+      easing: 'ease-in-out',  // Easing de l'animation
+      once: true,  // Animation qui se déclenche seulement une fois
+    });
+  </script>
+
+</body>
+
 </html>
